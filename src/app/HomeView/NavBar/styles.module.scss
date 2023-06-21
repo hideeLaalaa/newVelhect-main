@@ -1,0 +1,98 @@
+$black: #000;
+$navbackground: #2f2e2c;
+$white: #fff;
+$highlight: #f94b14;
+
+.nav_container {
+    background-color: $navbackground;
+    height: 99px;
+    display: flex;    
+    flex-direction: row;
+    align-items: center;
+    padding-left: 168px;
+    z-index: 100;
+    position: fixed;
+    right: 0%;
+    left: 0%;
+    top: 0%;
+    padding-right: 168px;
+    justify-content: space-between;
+}
+
+.link {
+    color: $white;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Roboto";
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 22px;
+    &__container {
+        padding-left: 80px;
+    }
+
+    &:hover {
+        color: $highlight;
+    }
+    &s__group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.flow__container {
+    display: none;
+}
+
+.mobilenav_container {
+    display: none;
+}
+
+@media only screen and (max-width: 746px) {
+    .nav_container {
+        display: none;
+    }
+    .mobilenav_container {
+        background-color: $navbackground;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger {
+        color: #fff;
+        position: absolute;
+        left: 20px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .flow__container {
+        position: absolute;
+        top: 60px;
+        right: 0%;
+        left: 0%;
+    }
+
+    .url {
+        &__container {
+            padding: 20px;
+            margin-top: -2px;
+            background-color: $navbackground;
+            & > p {
+                color: $white;
+                font-style: normal;
+                font-weight: 400;
+                font-family: "Roboto";
+                cursor: pointer;
+                font-size: 16px;
+
+                &:hover {
+                    color: $highlight;
+                }
+            }
+        }
+    }
+}
