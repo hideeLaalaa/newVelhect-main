@@ -298,7 +298,7 @@ function HomeView() {
         </div>
 
         <div className={styles.desktop__view} >
-          <div className={styles.products__container}>
+          {/* <div className={styles.products__container}>
 
             <div className={styles.content__subcontainer2} >
               <p className={[styles.content__title2, styles.products__header].join(" ")}> PRODUCTS</p>
@@ -386,7 +386,7 @@ function HomeView() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Partners */}
           <div className={styles.content__container} >
