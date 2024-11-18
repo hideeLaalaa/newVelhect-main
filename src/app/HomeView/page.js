@@ -438,7 +438,7 @@ function HomeView() {
         </div>
 
         <div className={styles.mobile__view} >
-          <div className={styles.products__container}>
+          {/* <div className={styles.products__container}>
 
             <div className={styles.content__subcontainer2} >
               <p className={[styles.content__title2, styles.products__header].join(" ")}> PRODUCTS</p>
@@ -478,7 +478,7 @@ function HomeView() {
               <p>View all our products</p>
             </div>
 
-          </div>
+          </div> */}
 
           <div className={styles.mission__background}>
             <div className={styles.mission__container} >
